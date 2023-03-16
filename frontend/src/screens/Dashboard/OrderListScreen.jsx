@@ -7,7 +7,7 @@ import SideBarComponents from "../../components/SideBar/SideBarComponents";
 const OrderListScreen = () => {
   return (
     <div style={{ marginTop: "110px" }}>
-      <Meta title="Agroic | Admin Orders" />
+      <Meta title="Agventure | Admin Orders" />
       <Container fluid>
         <Row>
           <Col md={3}>

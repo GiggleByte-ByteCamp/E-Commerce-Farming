@@ -49,14 +49,14 @@ const Footer = () => {
           <MDBRow className="mt-3">
             <MDBCol md="3" lg="3    " xl="3" className="mb-4 dark-grey-text">
               <h6 className="text-uppercase font-weight-bold">
-                <strong>Agroic</strong>
+                <strong>Agventure</strong>
               </h6>
               <hr
                 className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
                 style={{ width: "60px" }}
               />
               <p>
-                The purpose of Agroic is to provide connections between
+                The purpose of Agventure is to provide connections between
                 different roles in the agriculture industry. As the farmers are
                 not getting a fair price for their goods because of contractors.
                 This app removes the requirement of contractors for farmers.

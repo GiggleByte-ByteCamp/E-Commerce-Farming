@@ -70,7 +70,7 @@ const Harvest = () => {
                                                 <td>{product.cropSelection}</td>
                                                 <td>
                                                     {
-                                                        product.isReviwed ? (
+                                                        !product.isReviwed ? (
                                                             <LinkContainer to={`/supplierproducts/${product._id}/review`}>
                                                                 <Button
                                                                     disabled

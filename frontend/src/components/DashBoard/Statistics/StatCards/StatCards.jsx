@@ -53,7 +53,7 @@ const StatCards = () => {
             <Col>
               <Row>
                 <Card.Text>
-                  <span className="card-text-name">All Users</span>
+                  <span className="card-text-name">All Users dc</span>
                 </Card.Text>
               </Row>
               <Row>

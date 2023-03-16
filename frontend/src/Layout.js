@@ -1,5 +1,7 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import PredictionModel from './screens/Cart/Cart2';
 
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -36,11 +38,18 @@ import FarmerProduct from './screens/FarmerProducts/FarmerProducts';
 import MapScreen from './screens/Dashboard/MapScreen';
 
 const Layout = () => {
+    const [url, setUrl] = useState(window.location.href);
+
     return (
         <>
             <Router>
-                <Header />
+            {window.location.href === "http://localhost:3000/prediction-model" ? null : <Header />}
+
+           {/* <Header /> */}
+               
                 <Switch>
+                <Route exact path="/prediction-model" onClick={() => setUrl(window.location.href)} component={PredictionModel} />
+
                     <Route exact path="/" component={HomeScreen} />
                     <Route exact path="/farmer" component={Farmer} />
                     <Route exact path="/consumer" component={Consumer} />
@@ -75,7 +84,7 @@ const Layout = () => {
                     <Route exact path="/farmers/lendMachines/:id" component={LendMachineProduct} />
                     <Route exact path="/consumer/:id" component={ConsumerProductDetailScreen} />
                 </Switch>
-                <Footer />
+                {window.location.href === "http://localhost:3000/prediction-model" ? null : <Footer />}
             </Router>
         </>
     )

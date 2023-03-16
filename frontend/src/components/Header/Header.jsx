@@ -33,10 +33,14 @@ const Header = () => {
             <Nav.Link className="nav-cal">FARMER</Nav.Link>
           </LinkContainer>
           <LinkContainer to="/consumer">
-            <Nav.Link className="nav-cal">CONSUMER</Nav.Link>
+            <Nav.Link className="nav-cal">BUY</Nav.Link>
           </LinkContainer>
+
           <LinkContainer to="login?redirect=supplier">
-            <Nav.Link className="nav-cal">SUPPLIER</Nav.Link>
+            <Nav.Link className="nav-cal">SELL</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/prediction-model">
+            <Nav.Link className="nav-cal">Predictions</Nav.Link>
           </LinkContainer>
           <LinkContainer to="/cart">
             <Nav.Link
